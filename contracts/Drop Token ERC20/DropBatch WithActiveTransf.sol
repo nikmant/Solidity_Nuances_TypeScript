@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.7.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -23,10 +23,6 @@ contract DropBatch is Ownable {
     // Main Functions
     // =================================
 
-    function test(address _token, uint _amountTotal) external onlyOwner returns (uint, uint) {
-        return (IERC20(_token).balanceOf(address(this)), IERC20(_token).balanceOf(msg.sender));
-    }
-
     // Add token to drop
     function addTokenToDrop(address _token, uint _amountTotal, uint _amountForOne) external onlyOwner {
         require(_token != address(0), "Address token is zero!");        
@@ -35,8 +31,10 @@ contract DropBatch is Ownable {
         require(_amountTotal >= _amountForOne, "Amount total less than amount for one!");
         // Add token to drop
         dropableTokens.push(StructDrop(IERC20(_token), _amountForOne));
+        // Approve tokens to send        
+        IERC20(_token).approve(address(this), _amountTotal);
         // Transfer tokens to contract
-        IERC20(_token).transfer(address(this), _amountTotal);
+        IERC20(_token).transferFrom(msg.sender, address(this), _amountTotal);
     }
 
     // Get drop all tokens for user
