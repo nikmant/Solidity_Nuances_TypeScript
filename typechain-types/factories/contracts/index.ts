@@ -3,4 +3,5 @@
 /* eslint-disable */
 export * as challenge1 from "./Challenge1";
 export * as tokenErc20Drop from "./Token ERC20 Drop";
+export * as tokenErc20Sender from "./Token ERC20 Sender";
 export { Lock__factory } from "./Lock__factory";

@@ -23,10 +23,6 @@ contract DropBatch is Ownable {
     // Main Functions
     // =================================
 
-    function test(address _token, uint _amountTotal) external onlyOwner returns (uint, uint) {
-        return (IERC20(_token).balanceOf(address(this)), IERC20(_token).balanceOf(msg.sender));
-    }
-
     // Add token to drop
     function addTokenToDrop(address _token, uint _amountTotal, uint _amountForOne) external onlyOwner {
         require(_token != address(0), "Address token is zero!");        

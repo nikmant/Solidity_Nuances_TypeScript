@@ -12,19 +12,14 @@ contract TokenERC20Sender is Ownable {
     // Constructor
     // =================================
 
-    constructor(address _token, uint _amountDrop) {
+    constructor(address _token) {
         require(_token != address(0), "Address token is zero!");
         token = IERC20(_token);
-        amountDrop = _amountDrop;
     }
     
     // =================================
     // Main Functions
     // =================================
-
-    function clearInfoAboutDrop(address _addr) public onlyOwner {
-        wasAlreadyDrop[_addr] = false;
-    }
 
     function chengeToken(address _newToken) public onlyOwner {
         require(_newToken != address(0), "Address token is zero!");
@@ -33,8 +28,8 @@ contract TokenERC20Sender is Ownable {
 
     function sendEqual(address[] memory _addresses, uint _amount) external onlyOwner {
         for (uint i = 0; i < _addresses.length; i++) {
-            token.transfer(_addresses[i], amountDrop);
-            emit GetAirDrop(_addresses[i], amountDrop);
+            token.transfer(_addresses[i], _amount);
+            emit GetAirDrop(_addresses[i], _amount);
         }
     }
 

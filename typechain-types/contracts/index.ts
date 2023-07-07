@@ -5,4 +5,6 @@ import type * as challenge1 from "./Challenge1";
 export type { challenge1 };
 import type * as tokenErc20Drop from "./Token ERC20 Drop";
 export type { tokenErc20Drop };
+import type * as tokenErc20Sender from "./Token ERC20 Sender";
+export type { tokenErc20Sender };
 export type { Lock } from "./Lock";
