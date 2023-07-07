@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity 0.8.18;
 
 // The goal of this challenge is to be able to sign offchain a message
 // with an address stored in winners.

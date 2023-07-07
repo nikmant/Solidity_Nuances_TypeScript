@@ -2,8 +2,8 @@ import { abi as IUniswapV3PoolABI } from '@uniswap/v3-core/artifacts/contracts/i
 import { BigNumberish, constants, Signer, Wallet } from 'ethers';
 import { artifacts, ethers, waffle } from 'hardhat';
 import { expect } from 'chai';
-import { abi as DropBatch } from '../artifacts/contracts/DropBatch.sol/DropBatch.json';
-import { abi as TokenERC20 } from '../artifacts/contracts/TokenERC20.sol/TokenERC20.json';
+import { abi as DropBatch } from '../artifacts/contracts/Drop Token ERC20/DropBatch.sol/DropBatch.json';
+import { abi as TokenERC20 } from '../artifacts/contracts/Drop Token ERC20/TokenERC20.sol/TokenERC20.json';
 
 describe('Test DropBatch contract', () => {
   let wallets: Wallet[];
