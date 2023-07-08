@@ -45,21 +45,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock__factory>;
     getContractFactory(
+      name: "DropBatch_WithActiveTransf",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch_WithActiveTransf__factory>;
+    getContractFactory(
+      name: "DropBatch",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch__factory>;
+    getContractFactory(
       name: "DropOneInHand",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DropOneInHand__factory>;
     getContractFactory(
-      name: "DropBatch",
+      name: "TokenERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch__factory>;
-    getContractFactory(
-      name: "DropBatch",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch__factory>;
-    getContractFactory(
-      name: "ColaERC20",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ColaERC20__factory>;
+    ): Promise<Contracts.TokenERC20__factory>;
     getContractFactory(
       name: "TokenERC20Sender",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -110,25 +110,25 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Lock>;
     getContractAt(
+      name: "DropBatch_WithActiveTransf",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.DropBatch_WithActiveTransf>;
+    getContractAt(
+      name: "DropBatch",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.DropBatch>;
+    getContractAt(
       name: "DropOneInHand",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.DropOneInHand>;
     getContractAt(
-      name: "DropBatch",
+      name: "TokenERC20",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.DropBatch>;
-    getContractAt(
-      name: "DropBatch",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.DropBatch>;
-    getContractAt(
-      name: "ColaERC20",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ColaERC20>;
+    ): Promise<Contracts.TokenERC20>;
     getContractAt(
       name: "TokenERC20Sender",
       address: string | ethers.Addressable,
@@ -173,21 +173,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock>;
     deployContract(
+      name: "DropBatch_WithActiveTransf",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch_WithActiveTransf>;
+    deployContract(
+      name: "DropBatch",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch>;
+    deployContract(
       name: "DropOneInHand",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DropOneInHand>;
     deployContract(
-      name: "DropBatch",
+      name: "TokenERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch>;
-    deployContract(
-      name: "DropBatch",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch>;
-    deployContract(
-      name: "ColaERC20",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ColaERC20>;
+    ): Promise<Contracts.TokenERC20>;
     deployContract(
       name: "TokenERC20Sender",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -238,25 +238,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock>;
     deployContract(
+      name: "DropBatch_WithActiveTransf",
+      args: any[],
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch_WithActiveTransf>;
+    deployContract(
+      name: "DropBatch",
+      args: any[],
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch>;
+    deployContract(
       name: "DropOneInHand",
       args: any[],
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DropOneInHand>;
     deployContract(
-      name: "DropBatch",
+      name: "TokenERC20",
       args: any[],
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch>;
-    deployContract(
-      name: "DropBatch",
-      args: any[],
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.DropBatch>;
-    deployContract(
-      name: "ColaERC20",
-      args: any[],
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ColaERC20>;
+    ): Promise<Contracts.TokenERC20>;
     deployContract(
       name: "TokenERC20Sender",
       args: any[],

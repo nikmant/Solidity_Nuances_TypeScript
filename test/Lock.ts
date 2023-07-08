@@ -23,6 +23,9 @@ describe("Lock", function () {
     const Lock = await ethers.getContractFactory("Lock");
     const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
 
+    // Вывод адреса контракта в консоль
+    console.log('Lock contract deployed to:', lock.deploymentTransaction.to);
+
     return { lock, unlockTime, lockedAmount, owner, otherAccount };
   }
 
