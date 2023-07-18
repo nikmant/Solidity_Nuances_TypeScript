@@ -20,13 +20,20 @@
   },
   "homepage": "https://github.com/nikmant/Solidity_nuances#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^3.0.3",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@openzeppelin/hardhat-upgrades": "^2.0.0",
-    "ethers": "^6.6.2",
-    "hardhat": "^2.16.1"
+    "hardhat": "^2.16.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@types/chai": "^4.1.7",
+    "@types/fs-extra": "^5.0.4",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^8.10.38",
+    "ethers": "^5.0.8",
+    "chai": "^4.2.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.9.2"
+    "@openzeppelin/contracts": "^4.9.2",
+    "hardhat-ethers": "^1.0.1",
+    "dotenv": "^16.0.3"
   }
 }

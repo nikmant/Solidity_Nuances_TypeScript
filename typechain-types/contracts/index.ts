@@ -7,4 +7,6 @@ import type * as tokenErc20Drop from "./Token ERC20 Drop";
 export type { tokenErc20Drop };
 import type * as tokenErc20Sender from "./Token ERC20 Sender";
 export type { tokenErc20Sender };
+export type { DropBatch } from "./DropBatch";
 export type { Lock } from "./Lock";
+export type { TokenERC20 } from "./TokenERC20";

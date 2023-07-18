@@ -4,4 +4,6 @@
 export * as challenge1 from "./Challenge1";
 export * as tokenErc20Drop from "./Token ERC20 Drop";
 export * as tokenErc20Sender from "./Token ERC20 Sender";
+export { DropBatch__factory } from "./DropBatch__factory";
 export { Lock__factory } from "./Lock__factory";
+export { TokenERC20__factory } from "./TokenERC20__factory";

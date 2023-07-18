@@ -41,6 +41,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IChallenge__factory>;
     getContractFactory(
+      name: "DropBatch",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch__factory>;
+    getContractFactory(
       name: "Lock",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock__factory>;
@@ -68,6 +72,10 @@ declare module "hardhat/types/runtime" {
       name: "ColaERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ColaERC20__factory>;
+    getContractFactory(
+      name: "TokenERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TokenERC20__factory>;
 
     getContractAt(
       name: "Ownable",
@@ -105,6 +113,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IChallenge>;
     getContractAt(
+      name: "DropBatch",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.DropBatch>;
+    getContractAt(
       name: "Lock",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -139,6 +152,11 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.ColaERC20>;
+    getContractAt(
+      name: "TokenERC20",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TokenERC20>;
 
     deployContract(
       name: "Ownable",
@@ -169,6 +187,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IChallenge>;
     deployContract(
+      name: "DropBatch",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch>;
+    deployContract(
       name: "Lock",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock>;
@@ -196,6 +218,10 @@ declare module "hardhat/types/runtime" {
       name: "ColaERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ColaERC20>;
+    deployContract(
+      name: "TokenERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TokenERC20>;
 
     deployContract(
       name: "Ownable",
@@ -233,6 +259,11 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IChallenge>;
     deployContract(
+      name: "DropBatch",
+      args: any[],
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DropBatch>;
+    deployContract(
       name: "Lock",
       args: any[],
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -267,6 +298,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ColaERC20>;
+    deployContract(
+      name: "TokenERC20",
+      args: any[],
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TokenERC20>;
 
     // default types
     getContractFactory(
